@@ -4,17 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🚧  Upsssss...</title>
-<!-- Etiquetas para evitar que Google indexe la página -->
 <meta name="robots" content="noindex, nofollow">
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="https://cemp.app/favicon.png">
+<link rel="icon" type="image/png" href="src/LogoCempBlanco.png">
 <style>
   body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    text-align: center;
-    padding: 50px;
-    color: #555; /* Cambio de color de texto a gris */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    color: #555; 
+    text-align: center; /* Añadido para centrar el texto */
   }
   #logo {
     margin-bottom: 30px;
@@ -22,14 +25,19 @@
   .maintenance-message {
     color: #333;
     margin-bottom: 10px;
+    justify-content: center;
   }
   .time-remaining {
     color: #555;
     font-size: 18px;
+    justify-content: center;
   }
   .icon {
     font-size: 50px;
     margin: 10px;
+  }
+  .last-paragraph { /* Estilo para el último párrafo */
+    justify-content: center;
   }
   @media only screen and (max-width: 600px) {
     .icon {
@@ -40,14 +48,15 @@
 </head>
 <body>
 <div id="logo">
-  <!-- Aquí iría la imagen del logo como un archivo SVG o PNG -->
-  <img src="https://cemp.app/login/LogoCempBlanco.png" alt="Logotipo CEMP">
+  <img src="src/LogoCempBlanco.png" alt="Logotipo CEMP">
 </div>
 <div>
     <span class="icon">🚧  Upsss...</span>
 </div>
 <h1 class="maintenance-message">Nos migramos al nuevo dominio</h1>
 <h1 class="time-remaining">Este dominio ya no es válido y ha sido actualizado. <br> Por favor utilice el nuevo enlace de ingreso y elimina este de tus favoritos, ya que no volverá a funcionar.</h1>
-<span class="icon">🤖</span>
+<p class="last-paragraph"> <!-- Añadido un párrafo para el último mensaje -->
+  <span class="icon">🤖</span>
+</p>
 </body>
 </html>
